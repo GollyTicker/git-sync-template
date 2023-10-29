@@ -21,8 +21,8 @@ e.g. If you knowledge-base is at `/path/to/my/knowledge-base` then put these fil
 1. Completely remove the directory of your knowledge-base on mobile.
 1. Fresh clone it using the `Initial_Clone_Android.sh` from the templates. You need to adapt the lines with `ADAPT ME`. This makes sure, that certain setups are correctly done.
 1. Next for each OS, you want to check, that the invocation of the script actually works. Make a minor change and invoke the scripts. On mobile, you can add Termin widgets to the Home screen, so that you can invoke the script from there directly.
-  * the scripts should work correctly on Linux, given that you have Git + LFS installed and the scripts correctly adapted.
-  * on mobile, after doing the fresh clone, you'll encounter an error where the git post-commit hooks are trying to access `$HOME/.git`. This is fixed, if you add a symlink in your home directory called `.git` and point it to the `.git` of your knowledge-base repository root. e.g. `ln -s /path/to/my/knowledge-base/.git $HOME/.git`
-    * After this fix, the mobile sync scripts should be working and should correctly pull, commit and push everything including submodules and LFS objects. 
+    * the scripts should work correctly on Linux, given that you have Git + LFS installed and the scripts correctly adapted.
+    * on mobile, after doing the fresh clone, you'll encounter an error where the git post-commit hooks are trying to access `$HOME/.git`. This is fixed, if you add a symlink in your home directory called `.git` and point it to the `.git` of your knowledge-base repository root. e.g. `ln -s /path/to/my/knowledge-base/.git $HOME/.git`
+        * After this fix, the mobile sync scripts should be working and should correctly pull, commit and push everything including submodules and LFS objects. 
 1. Did your sync work? Congratz! You can take a look at the various `source.sh` files and make individual configuration if you want to.
 1. Did your sync fail? Properly read the error message and try to see what could be causing it. If you cannot make it work after putting some effort, then describe your setup and write an issue to this repository.
