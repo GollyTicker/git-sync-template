@@ -7,6 +7,8 @@ However, me and a few friends have been *robustly and consistently* using these 
 
 It's used to have a consistent git-sync workflow on Android via Termux and Linux+Windows - **including submodules and GitLFS syncing on Android.** (Which is a pain to get working, if you ever tried to simply use the normal way.)
 
+[Context of why these scripts exist](https://github.com/denolehov/obsidian-git/issues/608)
+
 ## How to use with your markdown-based personal knowledgebase (e.g. Obsidian, Logseq, etc.)
 
 1. Copy this folder of files into a directory `scripts` into your knowledge-base root folder.
