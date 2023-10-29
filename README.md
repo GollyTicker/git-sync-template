@@ -1,7 +1,9 @@
 # git-sync-scripts
 A set of scripts to synchronize local folders. Primarily used for syncing Markdown-based knowledge files across multiple systems
 
-*Attention: These files are merely provided, because my private setup seems to solve some problems other people also had. You're best if you understand a bit about linux, command line and git so that you can fix minor problems yourselves. These scripts are **NOT** intended as a user-friendly robust set of scripts, when used outside of their initial use-case.*
+*Attention: These files are merely provided, because my private setup seems to solve some problems other people also had. You're best if you understand a bit about linux, command line, git and termux so that you can fix minor problems yourselves. These scripts are **NOT** intended as a jump-in immediately-user-friendly robust set of scripts, when used outside of their initial use-case.*
+
+However, me and a few friends have been *robustly and consistently* using these scripts on Linux, Windows and Android via Termux. When the configuration is correct once, then it consistently works. Except, Git on Termux sometimes randomly has object errors (which seems to be a Termux issue, as it already happened with git before these scripts were used.). In that case, I simply manually copy my changes and re-clone my repository on Termux.
 
 It's used to have a consistent git-sync workflow on Android via Termux and Linux+Windows - **including submodules and GitLFS syncing on Android.** (Which is a pain to get working, if you ever tried to simply use the normal way.)
 
