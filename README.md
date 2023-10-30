@@ -1,5 +1,5 @@
 # git-sync-scripts
-A set of scripts to synchronize local folders. Primarily used for syncing Markdown-based knowledge files across multiple systems
+Git Sync scripts for markdown-based knowledge-base files with correct sync for submodules and Git LFS on Android.
 
 *Attention: These files are merely provided, because my private setup seems to solve some problems other people also had. You're best if you understand a bit about linux, command line, git and termux so that you can fix minor problems yourselves. These scripts are **NOT** intended as a jump-in immediately-user-friendly robust set of scripts, when used outside of their initial use-case.*
 
