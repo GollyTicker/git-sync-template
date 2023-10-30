@@ -5,7 +5,7 @@ export GIT_PUSH_COMMAND="git push"
 
 export SUBMODULE_BRANCH="main"
 
-# Comment this line, if you want to merge remote changes instead of rebasing local changes on top of remote ones.
+# When we rebade local changes on top of remote changes, with submodules we'll often get the same commit - which will correctly be skipped by git. This config just deactivates this hint and reduces clutter 
 git config advice.skippedCherryPicks false
 
 # Some OS get confused with loing paths.
